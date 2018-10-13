@@ -1,0 +1,33 @@
+#container{
+    display:grid;
+    grid-template-columns:  repeat(3,1fr) ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+            'space text2 space'
+            'space text1 space'
+            'space text 3 space'
+            ;
+    height: 100vh;
+    max-width: 100%;
+
+}
+
+.flex{
+    display:flex;
+}
+
+.center{
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+.introtext{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
