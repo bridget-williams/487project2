@@ -1,7 +1,8 @@
+//Slider Page JS
 $(function () {
     console.log('Test');
 
-
+    //function to alert mobile uders to rotate phone
     if ($(window).width() < 960) {
         alert('Turn your phone sideways for the best experience');
         $('.slidertext').slick({
@@ -9,21 +10,13 @@ $(function () {
         });
     }
     else {
-        alert('More than 960');
+        $('.slidertext').slick({
+            dots: true,
+        });
     }
 
 
-    $('#people').click(function () {
-        $(this).css('filter', 'none');
-    })
-
-
-
-    // $('.slick-next').click(function(e){
-    //     console.log(e.target);
-    //     $('#people').css('filter', 'none');
-    // })
-
+    //function to turn each svg element into color as user clicks next and back buttons
     var i = 0;
     console.log(i);
     $('body').on('click', '.slick-next', () => {
@@ -86,19 +79,6 @@ $(function () {
 
     });
     
-    $('.slick-next').click(function () {
-        console.log('next clicked');
-        i++;
-        console.log(i);
-        if (i == 1) {
-            $('#people').css('filter', 'none');
-        }
-    })
-
-
-    $('.slidertext').slick({
-        dots: true,
-    });
 
 
     //close ready function

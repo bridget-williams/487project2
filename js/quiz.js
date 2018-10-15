@@ -1,11 +1,12 @@
+//Quiz JS File
 $(function(){
     console.log('DOM Loaded');
 
 
-
+    //background image
     $.backstretch('img/citymap.jpg');
 
-    // var quiz = jQuery('#quiz').quiz('2PACX-1vTB-GcgiQQ404pLZ1rR7KQGNYNXbXoDIjY2G06YjHgsuOFuGN_9yfFY5ue86Y99gwnxsRLOS_ijjxwJ/pubhtml'); //your published spreadsheet key or URL goes here
+    //quiz question to be passed to quiz
     var myQuestions = [{
         question: "True or False: You don't need to consider liveability when designing a sustainable city.",
         answers: ["True"],
@@ -24,10 +25,13 @@ $(function(){
         correct: "False"
     }];
 
+    //initialization of quiz
     var myQuiz = new ysQuiz(myQuestions);
 
+    //addiiton of try again button to restart quiz
     $( ".tryAgain" ).click(function() {
         location.reload();
     });
+
 //Close Document Ready Function
 });
