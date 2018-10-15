@@ -47,13 +47,13 @@ a{
 /*Styling for Slider Page*/
 
 
-#lighting, #people, #building, #seating, #waste, #roads, #transit, #trees, #grass{
-    filter: grayscale(100%);
+#lighting, #people, #building, #seating, #waste, #roads, #transit, #trees,#energy, #grass{
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    transition:.3s ease;
 }
 
-#lighting{
-    filter:none;
-}
+
 
 
 
